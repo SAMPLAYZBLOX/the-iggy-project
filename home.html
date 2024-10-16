@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Dumb Will Iggy Be Today?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0070f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How dumb will Iggy be today?</h1>
+  <button onclick="generatePercentage()">Find Out!</button>
+  <h2 id="result"></h2>
+
+  <script>
+    function generatePercentage() {
+      const randomPercentage = Math.floor(Math.random() * 101);
+      document.getElementById('result').innerText = `Iggy will be ${randomPercentage}% dumb today!`;
+    }
+  </script>
+
+</body>
+</html>
